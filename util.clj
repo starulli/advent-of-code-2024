@@ -1,4 +1,4 @@
-(ns adventofcode2024.util)
+(ns util)
 
 (defn sum [coll]
   (reduce + 0 coll))

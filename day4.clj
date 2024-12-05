@@ -1,6 +1,6 @@
 (ns adventofcode2024.day4
   (:require [clojure.string :as str]
-            [adventofcode2024.util :as util]))
+            util))
 
 (defn parse-grid [s]
   (into [] (map #(into [] %) (str/split s #"\n"))))
