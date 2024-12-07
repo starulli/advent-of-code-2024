@@ -1,4 +1,5 @@
-(ns util)
+(ns util
+  (:require [clojure.string :as s]))
 
 (defn sum [coll]
   (reduce + 0 coll))
@@ -9,6 +10,9 @@
 
 (defn indexed [coll]
   (map vector (range) coll))
+
+(defn split-lines [str]
+  (s/split str #"\n"))
 
 (defn to-ints [coll]
   (mapv Integer/parseInt coll))
