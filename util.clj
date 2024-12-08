@@ -16,3 +16,6 @@
 
 (defn to-ints [coll]
   (mapv Integer/parseInt coll))
+
+(defn to-big-ints [coll]
+  (mapv bigint coll))
