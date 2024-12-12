@@ -15,7 +15,7 @@
   (s/split str #"\n"))
 
 (defn to-ints [coll]
-  (mapv Integer/parseInt coll))
+  (mapv (comp Integer/parseInt str) coll))
 
 (defn to-big-ints [coll]
   (mapv bigint coll))
